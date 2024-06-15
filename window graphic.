@@ -1,0 +1,62 @@
+# AngeLeyes
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Y2K Pop-up</title>
+  <style>
+    /* Styling for the pop-up */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background-color: #9F5AFF; /* Sunset purple color */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .popup h1 {
+      color: #FFFFFF; /* White text color */
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .popup p {
+      color: #FFFFFF; /* White text color */
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .popup button {
+      background-color: #FFFFFF; /* White button background */
+      color: #9F5AFF; /* Sunset purple button text color */
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup content -->
+  <div class="popup">
+    <h1>Welcome to the Y2K Pop-up!</h1>
+    <p>This is a throwback to the colorful Y2K era.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <!-- JavaScript to close the pop-up -->
+  <script>
+    function closePopup() {
+      var popup = document.querySelector('.popup');
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
